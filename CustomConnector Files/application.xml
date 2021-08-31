@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE sailpoint PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<sailpoint>
+<ImportAction name="merge">
+<Configuration name="ConnectorRegistry">
+<Attributes>
+<Map>
+<entry key="formPath" value="SQLLoaderConnectorAttributesForm.xhtml"/>
+<entry key="formPathRules" value="SQLLoaderConnectorRulesForm.xhtml"/>
+<entry key="applicationTemplates">
+<value>
+<List>
+  <Application connector="sailpoint.connector.OpenConnectorAdapter" featuresString="PROVISIONING, SYNC_PROVISIONING, AUTHENTICATE, PASSWORD, ENABLE, SEARCH, UNSTRUCTURED_TARGETS, DISCOVER_SCHEMA, ACCOUNT_ONLY_REQUEST" icon="internetIcon" name="TestDBConnetor" profileClass="" type="CustomDBConnector">
+    <Attributes>
+      <Map>
+        <entry key="authSearchAttributes">
+           <value>
+              <List>
+                <String>UserID</String>
+              </List>
+           </value>
+        </entry>
+        <entry key="compositeDefinition"/>
+        <entry key="connectorClass" value="openconnector.CustomDBConnector"/>
+        <entry key="division" value="IT"/>
+        
+        <entry key="nativeChangeDetectionAttributeScope" value="entitlements"/>
+        <entry key="nativeChangeDetectionAttributes"/>
+        <entry key="nativeChangeDetectionEnabled">
+            <value>
+                <Boolean></Boolean>
+            </value>
+        </entry>
+        <entry key="nativeChangeDetectionOperations"/>
+      </Map>
+  </Attributes>
+  <Schemas>
+     <Schema displayAttribute="" groupAttribute="" identityAttribute="" instanceAttribute="" nativeObjectType="account" objectType="account">
+       
+     </Schema>
+     <Schema displayAttribute="" identityAttribute="" instanceAttribute="" nativeObjectType="group" objectType="group">
+        
+     </Schema>
+   </Schemas>
+   
+ </Application>
+</List>
+</value>
+</entry>
+</Map>
+</Attributes>
+</Configuration>
+</ImportAction>
+</sailpoint>
